@@ -3,9 +3,17 @@
   font-family: 'Mountains of Christmas', cursive;
 }
 
-.body {
+html {
+  height: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
+  background-color: #ece7ee;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece7ee), color-stop(44%, #225d85), to(#225d85));
+  background: linear-gradient(180deg, #ece7ee 0%, #225d85 44%, #225d85 100%);
 }
 
 h1 {
@@ -13,7 +21,30 @@ h1 {
   text-align: center;
   font-size: 5rem;
   font-weight: bolder;
-  background: repeating-linear-gradient(45deg, #a01031, #a01031 30px, #067a02 30px, #067a02 60px);
+  background: repeating-linear-gradient(45deg, #a01031, #a01031 0.65rem, #067a02 0.65rem, #067a02 1.3rem);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: 44s linear 0s infinite move;
+          animation: 44s linear 0s infinite move;
+}
+
+@-webkit-keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
+}
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: 1000px;
+  }
 }
 
 /* COPYRIGHT */
@@ -21,7 +52,7 @@ h1 {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  color: #ECE7EE;
+  color: #ece7ee;
   text-shadow: 1px 1px 10px #fbff18;
 }
 /*# sourceMappingURL=main.css.map */
