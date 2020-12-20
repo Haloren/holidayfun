@@ -20,7 +20,7 @@ body {
     padding: 0;
     background-color: $white;
     background-repeat: no-repeat;
-    background:linear-gradient(180deg, $white 0%, $blue 44%, $blue 100%);
+    background:linear-gradient(180deg, $blue 0%, $blue 44%, $white 100%);
 }
 
 h1 {
@@ -28,12 +28,13 @@ h1 {
     text-align: center;
     font-size: 5rem;
     font-weight: bolder;
+    text-shadow: .25rem 0 $white;
     background: repeating-linear-gradient(
         45deg,
         $red,
-        $red .65rem,
-        $green .65rem,
-        $green 1.30rem
+        $red .75rem,
+        $white .75rem,
+        $white 1.50rem
     );
     background-clip: text;
     -webkit-background-clip: text;

@@ -12,8 +12,8 @@ body {
   padding: 0;
   background-color: #ece7ee;
   background-repeat: no-repeat;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ece7ee), color-stop(44%, #225d85), to(#225d85));
-  background: linear-gradient(180deg, #ece7ee 0%, #225d85 44%, #225d85 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#225d85), color-stop(44%, #225d85), to(#ece7ee));
+  background: linear-gradient(180deg, #225d85 0%, #225d85 44%, #ece7ee 100%);
 }
 
 h1 {
@@ -21,7 +21,8 @@ h1 {
   text-align: center;
   font-size: 5rem;
   font-weight: bolder;
-  background: repeating-linear-gradient(45deg, #a01031, #a01031 0.65rem, #067a02 0.65rem, #067a02 1.3rem);
+  text-shadow: 0.25rem 0 #ece7ee;
+  background: repeating-linear-gradient(45deg, #a01031, #a01031 0.75rem, #ece7ee 0.75rem, #ece7ee 1.5rem);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
