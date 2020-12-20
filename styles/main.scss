@@ -23,6 +23,14 @@ body {
     background:linear-gradient(180deg, $blue 0%, $blue 44%, $white 100%);
 }
 
+.snow {
+    z-index: -1;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 h1 {
     margin: 0;
     text-align: center;

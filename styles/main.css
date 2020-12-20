@@ -16,6 +16,14 @@ body {
   background: linear-gradient(180deg, #225d85 0%, #225d85 44%, #ece7ee 100%);
 }
 
+.snow {
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 h1 {
   margin: 0;
   text-align: center;
