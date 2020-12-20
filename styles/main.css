@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+* {
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bolder;
+  background: repeating-linear-gradient(45deg, #a01031, #a01031 30px, #067a02 30px, #067a02 60px);
+}
+
+/* COPYRIGHT */
+.copyright {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #ECE7EE;
+  text-shadow: 1px 1px 10px #fbff18;
+}
+/*# sourceMappingURL=main.css.map */
