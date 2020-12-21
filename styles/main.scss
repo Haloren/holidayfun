@@ -89,27 +89,57 @@ $light-height: 25px;
         background: blue;
         border: 1px solid blue;
         box-shadow: 0px 5px 10px rgb(0, 183, 255);
+
+        animation: flash-blue 2s infinite;
     }
     .red {
         background: red;
         border: 1px solid red;
         box-shadow: 0px 5px 10px rgb(255, 0, 98);
+
+        animation: flash-red 2s infinite;
     }
     .green {
         background: #2ad32a;
         border: 1px solid #2ad32a;
         box-shadow: 0px 5px 10px rgb(76, 255, 76);
+
+        animation: flash-green 2s infinite;
     }
     .purple {
         background: #9a09ee;
         border: 1px solid #9a09ee;
         box-shadow: 0px 5px 10px rgb(234, 78, 255);
+
+        animation: flash-purple 2s infinite;
     }
     .yellow {
         background: yellow;
         border: 1px solid yellow;
         box-shadow: 0px 5px 10px rgb(255, 228, 73);
+
+        animation: flash-yellow 2s infinite;
     }
+@keyframes flash-blue {
+    0%, 100% {box-shadow: 0px 5px 10px blue;} 
+    50% {box-shadow: 0px 5px 10px $silver;}
+}
+@keyframes flash-red {
+    0%, 100% {box-shadow: 0px 5px 10px red;} 
+    50% {box-shadow: 0px 5px 10px $silver;}
+}
+@keyframes flash-green {
+    0%, 100% {box-shadow: 0px 5px 10px #2ad32a;} 
+    50% {box-shadow: 0px 5px 10px $silver;}
+}
+@keyframes flash-purple {
+    0%, 100% {box-shadow: 0px 5px 10px #9a09ee;} 
+    50% {box-shadow: 0px 5px 10px $silver;}
+}
+@keyframes flash-yellow {
+    0%, 100% {box-shadow: 0px 5px 10px yellow;} 
+    50% {box-shadow: 0px 5px 10px $silver;}
+}
 
 // SNOW IMAGE 
 .snow {

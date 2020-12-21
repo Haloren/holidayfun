@@ -83,6 +83,8 @@ h1 {
   border: 1px solid blue;
   -webkit-box-shadow: 0px 5px 10px #00b7ff;
           box-shadow: 0px 5px 10px #00b7ff;
+  -webkit-animation: flash-blue 2s infinite;
+          animation: flash-blue 2s infinite;
 }
 
 .red {
@@ -90,6 +92,8 @@ h1 {
   border: 1px solid red;
   -webkit-box-shadow: 0px 5px 10px #ff0062;
           box-shadow: 0px 5px 10px #ff0062;
+  -webkit-animation: flash-red 2s infinite;
+          animation: flash-red 2s infinite;
 }
 
 .green {
@@ -97,6 +101,8 @@ h1 {
   border: 1px solid #2ad32a;
   -webkit-box-shadow: 0px 5px 10px #4cff4c;
           box-shadow: 0px 5px 10px #4cff4c;
+  -webkit-animation: flash-green 2s infinite;
+          animation: flash-green 2s infinite;
 }
 
 .purple {
@@ -104,6 +110,8 @@ h1 {
   border: 1px solid #9a09ee;
   -webkit-box-shadow: 0px 5px 10px #ea4eff;
           box-shadow: 0px 5px 10px #ea4eff;
+  -webkit-animation: flash-purple 2s infinite;
+          animation: flash-purple 2s infinite;
 }
 
 .yellow {
@@ -111,6 +119,118 @@ h1 {
   border: 1px solid yellow;
   -webkit-box-shadow: 0px 5px 10px #ffe449;
           box-shadow: 0px 5px 10px #ffe449;
+  -webkit-animation: flash-yellow 2s infinite;
+          animation: flash-yellow 2s infinite;
+}
+
+@-webkit-keyframes flash-blue {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px blue;
+            box-shadow: 0px 5px 10px blue;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@keyframes flash-blue {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px blue;
+            box-shadow: 0px 5px 10px blue;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@-webkit-keyframes flash-red {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px red;
+            box-shadow: 0px 5px 10px red;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@keyframes flash-red {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px red;
+            box-shadow: 0px 5px 10px red;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@-webkit-keyframes flash-green {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px #2ad32a;
+            box-shadow: 0px 5px 10px #2ad32a;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@keyframes flash-green {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px #2ad32a;
+            box-shadow: 0px 5px 10px #2ad32a;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@-webkit-keyframes flash-purple {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px #9a09ee;
+            box-shadow: 0px 5px 10px #9a09ee;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@keyframes flash-purple {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px #9a09ee;
+            box-shadow: 0px 5px 10px #9a09ee;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@-webkit-keyframes flash-yellow {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px yellow;
+            box-shadow: 0px 5px 10px yellow;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
+}
+
+@keyframes flash-yellow {
+  0%, 100% {
+    -webkit-box-shadow: 0px 5px 10px yellow;
+            box-shadow: 0px 5px 10px yellow;
+  }
+  50% {
+    -webkit-box-shadow: 0px 5px 10px #C0C0C0;
+            box-shadow: 0px 5px 10px #C0C0C0;
+  }
 }
 
 .snow {
