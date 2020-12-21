@@ -23,14 +23,7 @@ body {
     background:linear-gradient(180deg, $blue 0%, $blue 44%, $white 100%);
 }
 
-.snow {
-    z-index: -1;    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
+// TITLE MERRY KRAMPUS 
 h1 {
     margin: 0;
     text-align: center;
@@ -58,15 +51,52 @@ h1 {
     }
 }
 
-.lid {
+// LIGHTS
+$light-width: 10px;
+$light-height: 25px;
 
+.lights {
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  li {
+    display: inline-block;
+    list-style: none;
+    
+    width: $light-width;
+    height: $light-height;
+    margin: 25px;
+    border-radius: 50%;
+    background: $red;
+    box-shadow: 0px $light-height/8 $light-width $silver;
+  }
 }
 
+// SNOW IMAGE 
+.snow {
+    z-index: -1;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+// PRESENT 
 .present {
     
 }
+    .lid {
 
-/* COPYRIGHT */
+    }
+    .box {
+
+    }
+
+// COPYRIGHT
 .copyright {
     position: fixed;
     bottom: 10px;
