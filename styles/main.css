@@ -54,7 +54,7 @@ h1 {
   position: absolute;
   z-index: 1;
   width: 100%;
-  margin: 0;
+  margin: 25px;
   padding: 0;
 }
 
@@ -63,11 +63,54 @@ h1 {
   list-style: none;
   width: 10px;
   height: 25px;
-  margin: 25px;
+  margin: 5px 25px;
+  padding: 0;
   border-radius: 50%;
-  background: #a01031;
-  -webkit-box-shadow: 0px 3.125px 10px #C0C0C0;
-          box-shadow: 0px 3.125px 10px #C0C0C0;
+}
+
+.lights li:before {
+  content: "";
+  position: absolute;
+  background: #C0C0C0;
+  width: 10px;
+  height: 12.5px;
+  border-radius: 2px;
+  top: -3px;
+}
+
+.blue {
+  background: blue;
+  border: 1px solid blue;
+  -webkit-box-shadow: 0px 5px 10px #00b7ff;
+          box-shadow: 0px 5px 10px #00b7ff;
+}
+
+.red {
+  background: red;
+  border: 1px solid red;
+  -webkit-box-shadow: 0px 5px 10px #ff0062;
+          box-shadow: 0px 5px 10px #ff0062;
+}
+
+.green {
+  background: #2ad32a;
+  border: 1px solid #2ad32a;
+  -webkit-box-shadow: 0px 5px 10px #4cff4c;
+          box-shadow: 0px 5px 10px #4cff4c;
+}
+
+.purple {
+  background: #9a09ee;
+  border: 1px solid #9a09ee;
+  -webkit-box-shadow: 0px 5px 10px #ea4eff;
+          box-shadow: 0px 5px 10px #ea4eff;
+}
+
+.yellow {
+  background: yellow;
+  border: 1px solid yellow;
+  -webkit-box-shadow: 0px 5px 10px #ffe449;
+          box-shadow: 0px 5px 10px #ffe449;
 }
 
 .snow {

@@ -40,6 +40,7 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
     animation: 44s linear 0s infinite move;
 }
 @keyframes move {
@@ -61,20 +62,54 @@ $light-height: 25px;
     position: absolute;
     z-index: 1;
     width: 100%;
-    margin: 0;
+    margin: 25px;
     padding: 0;
   li {
     display: inline-block;
     list-style: none;
-    
+    // BULBS
     width: $light-width;
     height: $light-height;
-    margin: 25px;
+    margin: 5px 25px;
+    padding: 0;
     border-radius: 50%;
-    background: $red;
-    box-shadow: 0px $light-height/8 $light-width $silver;
+    // BULB TOPS
+    &:before {
+        content: "";
+        position: absolute;
+        background: $silver;
+        width: ($light-width);
+        height: ($light-height/2);
+        border-radius: 2px;
+        top: (2 - ($light-height/5));
+    }  
   }
 }
+    .blue {
+        background: blue;
+        border: 1px solid blue;
+        box-shadow: 0px 5px 10px rgb(0, 183, 255);
+    }
+    .red {
+        background: red;
+        border: 1px solid red;
+        box-shadow: 0px 5px 10px rgb(255, 0, 98);
+    }
+    .green {
+        background: #2ad32a;
+        border: 1px solid #2ad32a;
+        box-shadow: 0px 5px 10px rgb(76, 255, 76);
+    }
+    .purple {
+        background: #9a09ee;
+        border: 1px solid #9a09ee;
+        box-shadow: 0px 5px 10px rgb(234, 78, 255);
+    }
+    .yellow {
+        background: yellow;
+        border: 1px solid yellow;
+        box-shadow: 0px 5px 10px rgb(255, 228, 73);
+    }
 
 // SNOW IMAGE 
 .snow {
@@ -95,6 +130,11 @@ $light-height: 25px;
     .box {
 
     }
+
+// TREE
+.tree {
+
+}
 
 // COPYRIGHT
 .copyright {
