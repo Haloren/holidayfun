@@ -241,11 +241,37 @@ h1 {
   width: 100%;
 }
 
+.tree {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(55deg, green 5%, transparent 8%), linear-gradient(-55deg, #007600 5%, transparent 8%), linear-gradient(65deg, #006700 10%, transparent 12%), linear-gradient(-65deg, #004d00 10%, transparent 12%), linear-gradient(65deg, #006700 15%, transparent 15%), linear-gradient(-65deg, #004d00 15%, transparent 15%), linear-gradient(80deg, #5f3f21 5%, transparent 5%), linear-gradient(-80deg, #5b3c20 5%, transparent 5%);
+  background-position: 100px 80px, 100px 80px, 100px 110px, 100px 110px, 100px 140px, 100px 140px, 100px 160px, 100px 160px;
+}
+
+.tree-1 {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+
+.tree-2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.tree-3 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .copyright {
+  font-weight: bolder;
   position: fixed;
   bottom: 10px;
   right: 10px;
-  color: #ece7ee;
+  color: #a01031;
   text-shadow: 1px 1px 10px #fbff18;
 }
 /*# sourceMappingURL=main.css.map */
